@@ -1,0 +1,74 @@
+.calculator {
+  width: 320px;
+  margin: 100px auto;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(145deg, #f3f3f3, #DFC0EF);
+}
+
+.display {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 15px;
+  background-color: #f0f4f8;
+  color: #333;
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.display input {
+  width: 100%;
+  border: none;
+  font-size: 1.8em;
+  text-align: right;
+  background: transparent;
+  color: #333;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+button {
+  padding: 20px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(145deg, #e0e0e0, #ffffff);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #d1d1d1;
+  transform: scale(1.05);
+}
+
+button:active {
+  background-color: #bfbfbf;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+button.special {
+  background-color: #ffcccb;
+  color: #fff;
+}
+
+button.special:hover {
+  background-color: #ffb3b0;
+}
+
+button#equal {
+  background-color: #D9A6C3; /* Pink color for "=" button */
+  color: white;
+  grid-column: span 2;
+  border-radius: 20px;
+}
+
+button#equal:hover {
+  background-color: #C28AA6; /* Slightly darker pink on hover */
+}
